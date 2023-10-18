@@ -1,12 +1,13 @@
-import {Statistics} from '../components/Statistics/Statistics';
+import { Statistics } from '../components/Statistics/Statistics';
+import { Notification } from '../components/Notification/Notification';
 import css from 'index.module.css';
 
-export const App = () => {
+export class App extends Comment {
   // return (
   //   <div className={css.container}>
   //     <Counter />
   //   </div>
-  // );  
+  // );
   state = {
     good: 0,
     neutral: 0,
@@ -53,17 +54,18 @@ export const App = () => {
           <button onClick={this.handleClickNeutral}>Neutral</button>
           <button onClick={this.handleClickBad}>Bad</button>
         </div>
-        {totalFeedback !==0 ? 
-        (<Statistics
-        good={good}
-        neutral={neutral}
-        bad={bad}
-        total={totalFeedback}
-        positivePercentage={totalPercentage}
-      />) : (
-        <Notification message="There is no feedback" />
-      )}
-        
+        {totalFeedback !== 0 ? (
+          <Statistics
+            good={good}
+            neutral={neutral}
+            bad={bad}
+            total={totalFeedback}
+            positivePercentage={totalPercentage}
+          />
+        ) : (
+          <Notification message="There is no feedback" />
+        )}
+
         {/* <div className={css.stat}>
           <h3>Statistics</h3>
           <div>
@@ -91,6 +93,6 @@ export const App = () => {
       </div>
     );
   }
-};
+}
 
 // export default App;

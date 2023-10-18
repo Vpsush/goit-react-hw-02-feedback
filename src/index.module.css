@@ -22,3 +22,25 @@ code {
   display: flex;
   gap: 10px;
 }
+.bntContainer {
+  display: flex;
+  gap: 10px;
+}
+
+.numbersName {
+  display: flex;
+  flex-direction: row;
+  font-size: 16px;
+  font-style: normal;
+  align-items: center;
+  font-weight: 600;
+}
+
+.numbers {
+  margin: 0;
+  margin-left: 20px;
+  font-size: 16px;
+  font-style: normal;
+  align-items: center;
+  font-weight: 600;
+}

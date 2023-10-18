@@ -32,11 +32,122 @@
 //     const { good, bad, neutral } = this.state;
 //     return good + bad + neutral;
 //   };
+
 //   countPositiveFeedbackPercentage = () => {
 //     const { good } = this.state;
 //     const total = this.countTotalFeedback();
 //     return Math.round((good / total) * 100) || 0;
 //   };
+
+//   render() {
+//     const { good, neutral, bad } = this.state;
+//     const totalFeedback = this.countTotalFeedback();
+//     const totalPercentage = this.countPositiveFeedbackPercentage();
+//     return (
+//       <div>
+//         <h2>Please leave feedback</h2>
+//         <div className={css.bntContainer}>
+//           <button onClick={this.handleClickGood}>Good</button>
+//           <button onClick={this.handleClickNeutral}>Neutral</button>
+//           <button onClick={this.handleClickBad}>Bad</button>
+//         </div>
+//         <h3>Statistics</h3>
+//         <div>
+//           <span className={css.numbersName}>
+//             Good: <p className={css.numbers}> {this.state.good}</p>
+//           </span>
+//           <span className={css.numbersName}>
+//             Neutral: <p className={css.numbers}> {this.state.neutral}</p>
+//           </span>
+//           <span className={css.numbersName}>
+//             Bad: <p className={css.numbers}> {this.state.bad}</p>
+//           </span>
+//           <span className={css.numbersName}>
+//             Total:
+//             <p className={css.numbers}> {this.countTotalFeedback()}</p>
+//           </span>
+//           <span className={css.numbersName}>
+//             Positive Feedback:
+//             <p className={css.numbers}>
+//               {this.countPositiveFeedbackPercentage()} %
+//             </p>
+//           </span>
+//         </div>
+//       </div>
+//     );
+//   }
+// }
+
+// export default Counter;
+
+//   {
+//           // <Statistics
+//           //   good={this.good}
+//           //   neutral={this.neutral}
+//           //   bad={this.bad}
+//           //   total={this.totalFeedback}
+//           //   positivePercentage={this.totalPercentage}
+//           // />
+//           <div className={css.stat}>
+//             <h3>Statistics</h3>
+//             <div>
+//               <span className={css.numbersName}>
+//                 Good: <p className={css.numbers}>{this.state.good}</p>
+//               </span>
+//               <span className={css.numbersName}>
+//                 Neutral: <p className={css.numbers}>{this.state.neutral}</p>
+//               </span>
+//               <span className={css.numbersName}>
+//                 Bad: <p className={css.numbers}>{this.state.bad}</p>
+//               </span>
+//               <span className={css.numbersName}>
+//                 Total:
+//                 <p className={css.numbers}>{this.countTotalFeedback()}</p>
+//               </span>
+//               <span className={css.numbersName}>
+//                 Positive Feedback:
+//                 <p className={css.numbers}>
+//                   {this.countPositiveFeedbackPercentage()} %
+//                 </p>
+//               </span>
+//             </div>
+//           </div>
+//         }
+
+// class Counter extends Component {
+//   state = {
+//     good: 0,
+//     neutral: 0,
+//     bad: 0,
+//   };
+
+//   //   handleClickGood = e => {
+//   //     this.setState(prevState => {
+//   //       return { good: prevState.good + 1 };
+//   //     });
+//   //   };
+
+//   //   handleClickNeutral = e => {
+//   //     this.setState(prevState => {
+//   //       return { neutral: prevState.neutral + 1 };
+//   //     });
+//   //   };
+
+//   //   handleClickBad = e => {
+//   //     this.setState(prevState => {
+//   //       return { bad: prevState.bad + 1 };
+//   //     });
+//   //   };
+
+//   //   countTotalFeedback = () => {
+//   //     const { good, bad, neutral } = this.state;
+//   //     return good + bad + neutral;
+//   //   };
+//   //   countPositiveFeedbackPercentage = () => {
+//   //     const { good } = this.state;
+//   //     const total = this.countTotalFeedback();
+//   //     return Math.round((good / total) * 100) || 0;
+//   //   };
 
 //   render() {
 //     return (
@@ -47,37 +158,39 @@
 //           <button onClick={this.handleClickNeutral}>Neutral</button>
 //           <button onClick={this.handleClickBad}>Bad</button>
 //         </div>
-//         <Statistics
-//           good={good}
-//           neutral={neutral}
-//           bad={bad}
-//           total={totalFeedback}
-//           positivePercentage={totalPercentage}
-//         />
-//         {/* <div className={css.stat}>
-//           <h3>Statistics</h3>
-//           <div>
-//             <span className={css.numbersName}>
-//               Good: <p className={css.numbers}>{this.state.good}</p>
-//             </span>
-//             <span className={css.numbersName}>
-//               Neutral: <p className={css.numbers}>{this.state.neutral}</p>
-//             </span>
-//             <span className={css.numbersName}>
-//               Bad: <p className={css.numbers}>{this.state.bad}</p>
-//             </span>
-//             <span className={css.numbersName}>
-//               Total:
-//               <p className={css.numbers}>{this.countTotalFeedback()}</p>
-//             </span>
-//             <span className={css.numbersName}>
-//               Positive Feedback:
-//               <p className={css.numbers}>
-//                 {this.countPositiveFeedbackPercentage()} %
-//               </p>
-//             </span>
+//         {
+//           // <Statistics
+//           //   good={this.good}
+//           //   neutral={this.neutral}
+//           //   bad={this.bad}
+//           //   total={this.totalFeedback}
+//           //   positivePercentage={this.totalPercentage}
+//           // />
+//           <div className={css.stat}>
+//             <h3>Statistics</h3>
+//             <div>
+//               <span className={css.numbersName}>
+//                 Good: <p className={css.numbers}>{this.state.good}</p>
+//               </span>
+//               <span className={css.numbersName}>
+//                 Neutral: <p className={css.numbers}>{this.state.neutral}</p>
+//               </span>
+//               <span className={css.numbersName}>
+//                 Bad: <p className={css.numbers}>{this.state.bad}</p>
+//               </span>
+//               <span className={css.numbersName}>
+//                 Total:
+//                 <p className={css.numbers}>{this.countTotalFeedback()}</p>
+//               </span>
+//               <span className={css.numbersName}>
+//                 Positive Feedback:
+//                 <p className={css.numbers}>
+//                   {this.countPositiveFeedbackPercentage()} %
+//                 </p>
+//               </span>
+//             </div>
 //           </div>
-//         </div> */}
+//         }
 //       </div>
 //     );
 //   }

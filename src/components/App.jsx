@@ -1,6 +1,6 @@
-import { Statistics } from '../components/Statistics/Statistics';
+// import { Statistics } from '../components/Statistics/Statistics';
 // import { Notification } from '../components/Notification/Notification';
-import Counter from '../components/Counter/Counter';
+// import Counter from '../components/Counter/Counter';
 import { Component } from 'react';
 import css from 'index.module.css';
 

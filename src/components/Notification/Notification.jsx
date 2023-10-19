@@ -1,5 +1,3 @@
-// import React from 'react';
+// export const Notification = ({ message }) => ({ message });
 
-// export const Notification = ({ message }) => {
-//   return { message };
-// };
+// export default Notification;

@@ -1,8 +1,10 @@
-import { Statistics } from '../components/Statistics/Statistics';
-// import { Notification } from '../components/Notification/Notification';
-// import Counter from '../components/Counter/Counter';
 import { Component } from 'react';
 import css from 'index.module.css';
+
+import { Statistics } from '../components/Statistics/Statistics';
+// import { Notification } from '../components/Notification/Notification';
+// import FeedbackOptions from '../components/FeedbackOptions/FeedbackOptions';
+import Section from '../components/Section/Section';
 
 class App extends Component {
   state = {
@@ -46,13 +48,16 @@ class App extends Component {
     const totalPercentage = this.countPositiveFeedbackPercentage();
     return (
       <div>
-        <h2>Please leave feedback</h2>
+        {/* <Section title="Please leave feedback"> */}
+        {/* <FeedbackOptions options={} onLeaveFeedback={} /> */}
         <div className={css.bntContainer}>
           <button onClick={this.handleClickGood}>Good</button>
           <button onClick={this.handleClickNeutral}>Neutral</button>
           <button onClick={this.handleClickBad}>Bad</button>
         </div>
+        {/* </Section> */}
         {/* <Statistics /> */}
+
         <Statistics
           good={good}
           neutral={neutral}

@@ -1,8 +1,3 @@
-// import { Component } from 'react';
-// // import { Statistics } from '../Statistics/Statistics';
-// import { Statistics } from '../Statistics/Statistics';
-// import css from './Counter.module.css';
-
 // class Counter extends Component {
 //   state = {
 //     good: 0,

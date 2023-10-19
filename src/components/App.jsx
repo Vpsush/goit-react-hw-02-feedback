@@ -1,4 +1,4 @@
-// import { Statistics } from '../components/Statistics/Statistics';
+import { Statistics } from '../components/Statistics/Statistics';
 // import { Notification } from '../components/Notification/Notification';
 // import Counter from '../components/Counter/Counter';
 import { Component } from 'react';
@@ -41,9 +41,9 @@ class App extends Component {
   };
 
   render() {
-    // const { good, neutral, bad } = this.state;
-    // const totalFeedback = this.countTotalFeedback();
-    // const totalPercentage = this.countPositiveFeedbackPercentage();
+    const { good, neutral, bad } = this.state;
+    const totalFeedback = this.countTotalFeedback();
+    const totalPercentage = this.countPositiveFeedbackPercentage();
     return (
       <div>
         <h2>Please leave feedback</h2>
@@ -53,14 +53,13 @@ class App extends Component {
           <button onClick={this.handleClickBad}>Bad</button>
         </div>
         {/* <Statistics /> */}
-        {/* <Statistics
-        
+        <Statistics
           good={good}
           neutral={neutral}
           bad={bad}
           total={totalFeedback}
           positivePercentage={totalPercentage}
-        /> */}
+        />
         {/* <h3>Statistics</h3>
         <div>
           <span className={css.numbersName}>

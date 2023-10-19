@@ -61,7 +61,7 @@ class App extends Component {
           total={totalFeedback}
           positivePercentage={totalPercentage}
         /> */}
-        <h3>Statistics</h3>
+        {/* <h3>Statistics</h3>
         <div>
           <span className={css.numbersName}>
             Good: <p className={css.numbers}> {this.state.good}</p>
@@ -82,7 +82,7 @@ class App extends Component {
               {this.countPositiveFeedbackPercentage()} %
             </p>
           </span>
-        </div>
+        </div> */}
       </div>
     );
   }

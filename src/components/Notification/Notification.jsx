@@ -1,4 +1,3 @@
-// Notification.js
 import React from 'react';
 import css from './Notification.module.css';
 

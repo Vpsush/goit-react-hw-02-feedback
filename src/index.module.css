@@ -15,19 +15,21 @@ code {
 }
 
 .container {
+  display: flex;
+  flex-direction: column;
   padding: 0 20px;
   margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
 }
 .bntContainer {
   display: flex;
-  gap: 10px;
-}
-.bntContainer {
-  display: flex;
+  flex-direction: row;
   gap: 10px;
 }
 
-.numbersName {
+/* .numbersName {
   display: flex;
   flex-direction: row;
   font-size: 16px;
@@ -43,4 +45,4 @@ code {
   font-style: normal;
   align-items: center;
   font-weight: 600;
-}
+} */

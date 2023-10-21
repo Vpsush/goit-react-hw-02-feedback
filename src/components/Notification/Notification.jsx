@@ -1,3 +1,9 @@
-// export const Notification = ({ message }) => ({ message });
+// Notification.js
+import React from 'react';
+import css from './Notification.module.css';
 
-// export default Notification;
+const Notification = ({ message }) => {
+  return <div className={css.notification}>{message}</div>;
+};
+
+export default Notification;

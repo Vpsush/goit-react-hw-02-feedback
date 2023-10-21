@@ -1,15 +1,9 @@
+import React from 'react';
 import css from './Statistics.module.css';
 
-export const Statistics = ({
-  good,
-  neutral,
-  bad,
-  totalFeedback,
-  totalPercentage,
-}) => {
+const Statistics = ({ good, neutral, bad, totalFeedback, totalPercentage }) => {
   return (
     <div className={css.stat}>
-      <h3>Statistics</h3>
       <div>
         <span className={css.numbersName}>
           Good: <p className={css.numbers}>{good}</p>
@@ -26,7 +20,7 @@ export const Statistics = ({
         </span>
         <span className={css.numbersName}>
           Positive Feedback:
-          <p className={css.numbers}>{totalPercentage} %</p>
+          <p className={css.numbers}>{totalPercentage.toFixed(2)} %</p>
         </span>
       </div>
     </div>

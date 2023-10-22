@@ -1,7 +1,7 @@
 import React from 'react';
 import css from './Statistics.module.css';
 
-const Statistics = ({ good, neutral, bad, totalFeedback, totalPercentage }) => {
+const Statistics = ({ good, neutral, bad, total, totalPercentage }) => {
   return (
     <div className={css.stat}>
       <div>
@@ -16,7 +16,7 @@ const Statistics = ({ good, neutral, bad, totalFeedback, totalPercentage }) => {
         </span>
         <span className={css.numbersName}>
           Total:
-          <p className={css.numbers}>{totalFeedback}</p>
+          <p className={css.numbers}>{total}</p>
         </span>
         <span className={css.numbersName}>
           Positive Feedback:
